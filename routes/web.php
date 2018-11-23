@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('list');
 });
 
 Route::get('contact', function () {
@@ -31,6 +31,9 @@ Route::get('register', function(){
         return view ('login');
         });
 
+        Route::get('list', function(){
+            return view ('list');
+            });
 
 
 Route::get('list', 'ListController@index'); 
